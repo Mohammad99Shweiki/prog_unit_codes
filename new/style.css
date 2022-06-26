@@ -1,0 +1,41 @@
+.square{
+    display: inline-block;
+    background-color: red;
+    border-color: aquamarine;
+    height: 320px;
+    width: 320px;
+    position: absolute;
+}
+
+#id {
+    position: relevant;
+}
+.first {
+    z-index: 5;   
+    opacity: 1.0; 
+}
+.second {
+    z-index: 4;
+    top: 20;
+    left: 20;
+    opacity: 0.8;
+}
+.third {
+    z-index: 3;
+    top: 40;
+    left: 40;
+    opacity: 0.6;
+}
+.fourth {
+    z-index: 2;
+    top: 60;
+    left: 60;
+    opacity: 0.4;
+}
+
+.fifth {
+    z-index: 1;
+    top: 80;
+    left: 80;
+    opacity: 0.2;
+}

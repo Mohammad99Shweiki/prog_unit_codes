@@ -1,0 +1,35 @@
+.table {
+    border: 5px;
+    padding: 30px;
+    border-color: aquamarine;
+    width: 40em;
+    height: 45em;
+}
+.head {
+    background-color: blue;
+    font-size: large;
+    text-align: center;
+}
+.yes {
+    background-color: green;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+    text-align: left;
+}
+
+.first {
+    background-color: left;
+    background-color: yellow;
+}
+.no {
+    background-color: orange;
+    text-align: left;
+}
+
+.end {
+    color: white;
+    background-color: blueviolet;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+}

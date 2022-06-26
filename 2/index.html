@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Apply for a trip</title>
+    </head>
+    <body>
+        <h1>HTML Form Elements</h1>
+        
+        <p>Let's create a form to apply for a trip at a tourism company.</p>
+        
+        <p>We will collect the following information:</p>
+        
+        <ul>
+            <li>Name of the person applying</li>
+            <li>Their social security number</li>
+            <li>Their email address</li>
+            <li>Destination</li>
+            <li>Departure date</li>
+            <li>Return date</li>
+            <li>Their gender</li>
+            <li>An image of their passport</li>
+            <li>In how many stars of an hotel they'd like to stay</li>
+            <li>Any notes they might have</li>
+            <li>The option to include breakfast and lunch</li>
+        </ul>
+        
+        <p>Key takeaways:</p>
+        
+        <ul>
+            <li>How can we label our inputs?</li>
+            <li>How can further organize our form by grouping similar inputs?</li>
+            <li>Can we show how many stars the user has selected?</li>
+            <li>How can we submit our form</li>
+            <li>How can mark some of the inputs as required?</li>
+            <li>Is it possible to change the submittion method?</li>
+            <li>How can we reset our form?</li>
+            <li>What other types does the input element support?</li>
+        </ul>
+        <br>
+        <form action="./submit-form.html" method="POST">
+            <p>
+                <label for="personName">Name</label>
+                <input name="name" id="personName" type="text">
+            </p>
+            <p>
+                <label for="socialSecurity">Social security number</label>
+                <input required name="socialSecurity" id="socialSecurity" type="number" placeholder="Social security number">
+            </p>
+            <p>
+                <label for="personEmail">Email</label>
+                <input  name="email" id="personEmail" type="email">
+            </p>
+            <p>
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination">
+                    <option value="spain">Spain (Europe)</option>
+                    <option value="turkey3">Turkey</option>
+                    <option value="palestine">Palestine</option>
+                    <option value="italy">Italy</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Dates</legend>
+                <p>
+                    <label for="departureDate">Deprature</label>
+                    <input name="departure" id="departureDate" type="date">
+                </p>
+                <p>
+                    <label for="returnDate">Return</label>
+                    <input name="return" id="returnDate" type="date">
+                </p>
+            </fieldset>
+            <p>
+                <input name="gender" id="genderMale" type="radio">
+                <label for="genderMale">Male</label>
+                <input name="gender" id="genderFemale" type="radio">
+                <label for="genderFemale">Female</label>
+            </p>
+            <p>
+                <label for="passport">Image of your passport</label>
+                <input type="file" name="passport" id="passport" accept="image/*">
+            </p>
+            <p>
+                <label for="stars">How many stars?</label>
+                <input
+                    type="range"
+                    name="stars"
+                    id="stars"
+                    min="1"
+                    max="5"
+                    value="3"
+                >
+            </p>
+            <p>
+                <label for="userNotes">Any notes?</label>
+                <textarea id="userNotes" rows="7" cols="40"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="includeBreakfast">
+                <label for="includeBreakfast">Include breakfast and lunch?</label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </body>
+</html>
