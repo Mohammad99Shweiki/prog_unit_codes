@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Apply for a trip</title>
+    </head>
+    <body>
+        <h1>HTML Form Elements</h1>
+        
+        <p>Let's create a form to apply for a trip at a tourism company.</p>
+        
+        <p>We will collect the following information:</p>
+        
+        <ul>
+            <li>Name of the person applying</li>
+            <li>Their social security number</li>
+            <li>Their email address</li>
+            <li>Destination</li>
+            <li>Departure date</li>
+            <li>Return date</li>
+            <li>Their gender</li>
+            <li>An image of their passport</li>
+            <li>In how many stars of an hotel they'd like to stay</li>
+            <li>Any notes they might have</li>
+            <li>The option to include breakfast and lunch</li>
+        </ul>
+        
+        <p>Key takeaways:</p>
+        
+        <ul>
+            <li>How can we label our inputs?</li>
+            <li>How can further organize our form by grouping similar inputs?</li>
+            <li>Can we show how many stars the user has selected?</li>
+            <li>How can we submit our form</li>
+            <li>Is it possible to change the submittion method?</li>
+            <li>How can we reset our form?</li>
+            <li>What other types does the input element support?</li>
+        </ul>
+        <br>
+        <form action="next.html">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="personName">User name</label>
+                    <input name = "username" type="text" id = "personName" required>
+                </p>
+                <p>
+                    <label for="personNumber">Social Security number</label>
+                    <input name = "usernumber" id = "personNumber"type="number"  placeholder="Social Security Number" required>
+                </p>
+                <p>
+                    <label for="emailAddress">E-mail Adress</label>
+                    <input type="email" name = "mail" id = "emailAdress" required>
+                <p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>
+                    <label for="countries">Destination</label>
+                    <select name="countries" id="countries" required>
+                       <option value="brazil">Brazil</option>
+                        <option value="italy">Italy</option>
+                        <option value="spain ">Spain </option>
+                        <option value="france">France</option>
+                        <option value="qatar">Qatar</option>
+                        <option value="japan">Japan</option>
+                        <option value="uk">Uk</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Dates</legend>
+                <p>
+                    <label for="depDate">Departure Date</label>
+                    <input type="date" name="depDate" id="depDate">
+                </p>
+                <p>
+                    <label for="retDate">Return Date</label>
+                    <input type="date" name="retDate" id="retDate">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Potato</legend>
+                <p>
+                    <label for="gender">Gender</label>
+                    <br>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="male">
+                    <br>
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="female">
+                </p>
+                <p>
+                    <label for="img">Image of your Passport</label>
+                    <input type="file" name="img" id="img" accept="image/*">
+                </p>
+                <p>
+                    <label for="rate">rating of the hotel you'd like to stay in</label>
+                    <input type="range" name="rate" id="rate" min = "1" max = "5">
+                </p>
+                <p>
+                    <label for="note">any notes you'd like to add</label>
+                    <br>
+                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                    <label for="adds">would you like to include breakfast and lunch?</label>
+                    <input type="checkbox" name="adds" id="adds">
+                </p>
+            </fieldset>
+            <p
+    
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </body>
+</html>
