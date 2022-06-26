@@ -1,0 +1,23 @@
+.first {
+    font-family: comfortaa;
+    font-size: 27px;
+    color: darkgrey;
+    text-decoration: underline;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.second {
+    text-align: center;
+}
+
+.third {
+    color: grey;
+} 
+
+.fourth {
+    color: blue;
+    text-decoration: solid;
+    background-color:cornsilk;
+}

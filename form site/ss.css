@@ -1,0 +1,43 @@
+.inputWrapper {
+    width: 300px;
+}
+
+.inputWrapper > label {
+    display : block;
+    margin-bottom: 8px;
+}
+
+.inputWrapper > input, .inputWrapper > select , .inputWrapper > textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ced4da;
+    padding :6px 12px;
+    outline :none;
+    border-radius: 4px;
+}
+
+.inputWrapper > input:focus, .inputWrapper > select:focus , .inputWrapper > textarea:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 4px rgb(13 110 253 / 25%);
+}
+
+.body{
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-size:cover;
+    background-image: url(https://wallpaperaccess.com/full/1567665.png);
+    background-position: center;
+}
+.div {
+    width :auto;
+    border: #ced4da;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+#root {
+    width:100%;
+    text-align: center;
+}

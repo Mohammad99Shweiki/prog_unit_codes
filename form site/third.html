@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Apply for a trip</title>
+        <link rel="stylesheet" href="./ss.css">
+    </head>
+    <body class = "body">
+        <div id = "root">
+            <div class ="div">
+                <br>
+                <form action="./index.html" method="GET">
+                    <p class = "inputwrapper">
+                        <label for="personName">Name</label>
+                        <input name="name" id="personName" type="text">
+                    </p>
+                    <p class = "inputwrapper">
+                        <label for="socialSecurity">Social security number</label>
+                        <input required name="socialSecurity" id="socialSecurity" type="number" placeholder="Social security number">
+                    </p>
+                    <p class = "inputwrapper">
+                        <label for="personEmail">Email</label>
+                        <input  name="email" id="personEmail" type="email">
+                    </p>
+                    <p class = "inputwrapper">
+                        <label for="destination">Destination</label>
+                        <select name="destination" id="destination">
+                            <option value="spain">Spain (Europe)</option>
+                            <option value="turkey3">Turkey</option>
+                            <option value="palestine">Palestine</option>
+                            <option value="italy">Italy</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </p class = "inputwrapper">
+                    <fieldset>
+                        <legend>Dates</legend>
+                        <p class = "inputwrapper">
+                            <label for="departureDate">Deprature</label>
+                            <input name="departure" id="departureDate" type="date">
+                        </p>
+                        <p class = "inputwrapper">
+                            <label for="returnDate">Return</label>
+                            <input name="return" id="returnDate" type="date">
+                        </p>
+                    </fieldset>
+                    <p>
+                        <input name="gender" id="genderMale" type="radio">
+                        <label for="genderMale">Male</label>
+                        <input name="gender" id="genderFemale" type="radio">
+                        <label for="genderFemale">Female</label>
+                    </p>
+                    <p class = "inputwrapper">
+                        <label for="passport">Image of your passport</label>
+                        <input type="file" name="passport" id="passport" accept="image/*">
+                    </p>
+                    <p class = "inputwrapper">
+                        <label for="stars">How many stars?</label>
+                        <input
+                            type="range"
+                            name="stars"
+                            id="stars"
+                            min="1"
+                            max="5"
+                            value="3"
+                        >
+                    </p>
+                    <p class = "inputwrapper">
+                        <label for="userNotes">Any notes?</label>
+                        <textarea id="userNotes" rows="7" cols="40"></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="includeBreakfast">
+                        <label for="includeBreakfast">Include breakfast and lunch?</label>
+                    </p>
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
