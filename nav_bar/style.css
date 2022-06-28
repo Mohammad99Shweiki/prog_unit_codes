@@ -1,0 +1,60 @@
+.div {
+    display: inline-block;
+    position: relative;
+    width:800px;
+    height:200px;
+}
+
+.div >.span {
+    display: inline-block;
+    position:absolute;
+    z-index: 4;
+    height:25px;
+    width: 40px;
+    text-align: center; 
+    top: 25px;
+    border-radius: 100%;
+}
+
+.first {
+    background-color:#3aa13a;
+    left: 160px;
+    border: 3px solid green;
+}
+
+.second {
+    background-color: #3c3ced;
+    left: 290px;
+    border: 3px solid blue;
+}
+
+.third {
+    background-color: #de4545;
+    left: 500px;
+    border: 3px solid red;
+}
+
+.div >.span >p {
+    display: inline;
+    position: relative;
+    font-size:22;
+    color: white;
+}
+.div >table {
+    height:50px;
+    width: 660px;
+    background-color:lightgrey;
+    border-radius:22%;
+    border-width: 10px;
+    border-color: cadetblue;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    border: 10px groove #746e6e;
+
+}
+
+
+
